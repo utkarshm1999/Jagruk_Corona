@@ -1,10 +1,15 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Report from './report';
 import Form from './form';
 import Submit from './submit';
+
+
+
+
 
 import * as serviceWorker from './serviceWorker';
 import {
@@ -13,6 +18,10 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
+
+ReactGA.initialize('UA-162864526-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.StrictMode>

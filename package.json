@@ -9,6 +9,7 @@
     "googleapis": "^48.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-ga": "^2.7.0",
     "react-google-login": "^5.1.2",
     "react-loading-overlay": "^1.0.1",
     "react-router-dom": "^5.1.2",
