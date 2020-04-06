@@ -3,7 +3,7 @@ import LoadingOverlay from 'react-loading-overlay'
 import BounceLoader from 'react-spinners/BounceLoader'
 
 function Form(){
-  if(window.sessionStorage.login && window.sessionStorage.login=="true"){
+  if(window.localStorage.login && window.localStorage.login=="true"){
     
     return( <NameForm/> );
   }
@@ -72,7 +72,7 @@ class NameForm extends React.Component {
     handleSubmit(event) {
       
       var data = new FormData();
-      data.append("user_id", window.sessionStorage.uuid);
+      data.append("user_id", window.localStorage.uuid);
       data.append("title","title");
       data.append("address",this.state.address);
       data.append("city",this.state.city);

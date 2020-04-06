@@ -33,11 +33,11 @@ function App() {
     // console.log(response);
   
     //setState ="1";
-    window.sessionStorage.firstname=response.profileObj.givenName;
-    window.sessionStorage.secondname=response.profileObj.familyName;
-    window.sessionStorage.email=response.profileObj.email;
-    window.sessionStorage.login="true";
-    window.sessionStorage.uid = response.profileObj.googleId;
+    window.localStorage.firstname=response.profileObj.givenName;
+    window.localStorage.secondname=response.profileObj.familyName;
+    window.localStorage.email=response.profileObj.email;
+    window.localStorage.login="true";
+    window.localStorage.uid = response.profileObj.googleId;
     window.location.href="/report";
     
 }
@@ -46,7 +46,7 @@ function App() {
     // console.log("failed");
     // console.log(response);
   }
-    if(window.sessionStorage.login && window.sessionStorage.login=="true"){
+    if(window.localStorage.login && window.localStorage.login=="true"){
       window.location.href="/report";
     }
     else{

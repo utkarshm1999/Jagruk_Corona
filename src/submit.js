@@ -8,7 +8,7 @@ function Submit(){
 	const taketoreport =()=>{
 		window.location.href="/report";
 	}
-	if(window.sessionStorage.login && window.sessionStorage.login=="true"){
+	if(window.localStorage.login && window.localStorage.login=="true"){
 		return(
 			<div class="last">
 			<img class="last-1" src="icon/rush-18 1.png" alt="noimage"/>

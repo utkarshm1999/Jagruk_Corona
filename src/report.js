@@ -4,12 +4,12 @@ import { GoogleLogout } from 'react-google-login';
 function logOut(e){
     e.preventDefault();
     console.log("click");
-    window.sessionStorage.login="false";
-    window.sessionStorage.firstname=undefined;
-    window.sessionStorage.secondname=undefined;
-    window.sessionStorage.email=undefined;
-    window.sessionStorage.uid=undefined;
-    window.sessionStorage.uuid=undefined;
+    window.localStorage.login="false";
+    window.localStorage.firstname=undefined;
+    window.localStorage.secondname=undefined;
+    window.localStorage.email=undefined;
+    window.localStorage.uid=undefined;
+    window.localStorage.uuid=undefined;
     window.location.href="/home";
 
 }
@@ -18,14 +18,14 @@ function Report(){
     //console.log("hey");
     
     
-    if(window.sessionStorage.login && window.sessionStorage.login=="true"){
-       // console.log(window.sessionStorage.email);
+    if(window.localStorage.login && window.localStorage.login=="true"){
+       // console.log(window.localStorage.email);
 
        fetch("https://demo-stormbreaker.herokuapp.com/users/is_exist",{
            method: "POST",
-           firebase_id: window.sessionStorage.uid,
+           firebase_id: window.localStorage.uid,
            body: JSON.stringify({
-               firebase_id: window.sessionStorage.uid
+               firebase_id: window.localStorage.uid
            })
        })
        .then(res => res.json())
@@ -36,19 +36,19 @@ function Report(){
               // no register needed
               // console.log("no register, adding uuid");
               // console.log(result);
-              window.sessionStorage.uuid=result.user_id;
+              window.localStorage.uuid=result.user_id;
           }
           else{
               //register needed
               console.log("registering");
               fetch("https://demo-stormbreaker.herokuapp.com/users/register",{
                 method: "POST",
-                firebase_id: window.sessionStorage.uid,
+                firebase_id: window.localStorage.uid,
                 body: JSON.stringify({
-                    firebase_id: window.sessionStorage.uid,
-                    first_name: window.sessionStorage.firstname,
-                    last_name: window.sessionStorage.secondname,
-                    email: window.sessionStorage.email,
+                    firebase_id: window.localStorage.uid,
+                    first_name: window.localStorage.firstname,
+                    last_name: window.localStorage.secondname,
+                    email: window.localStorage.email,
                     device_id:"1"
 
 
@@ -59,7 +59,7 @@ function Report(){
              (result) => {
                     // console.log("register result");
                     // console.log(result);
-                    window.sessionStorage.uuid=result.user_id;
+                    window.localStorage.uuid=result.user_id;
                
              },
              // Note: it's important to handle errors here
