@@ -6,7 +6,7 @@ import App from './App';
 import Report from './report';
 import Form from './form';
 import Submit from './submit';
-
+import AddToHomescreen_ from './addtohs';
 
 
 
@@ -23,8 +23,14 @@ import {
 ReactGA.initialize('UA-162864526-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
+
+
+
 ReactDOM.render(
+  
   <React.StrictMode>
+    
+    <AddToHomescreen_ />
     <Router>
     <Switch>
           <Route path="/home">

@@ -8,6 +8,8 @@ import GoogleLogout from 'react-google-login';
 import { Redirect } from 'react-router-dom';
 import { render } from '@testing-library/react';
 import Report from './report';
+import { useGoogleLogin } from 'react-google-login';
+
 
 const googleConfig = {
   clientId: '916995490002-h4438ccl1o2hth8nk1eipja9ijvo79g6.apps.googleusercontent.com', // e.g. asdfghjkljhgfdsghjk.apps.googleusercontent.com
@@ -41,7 +43,28 @@ function App() {
     window.location.href="/report";
     
 }
-  
+// const { signIn, loaded } = useGoogleLogin({
+//   onSuccess,
+//   clientId,
+//   cookiePolicy,
+//   loginHint,
+//   hostedDomain,
+//   autoLoad,
+//   isSignedIn,
+//   fetchBasicProfile,
+//   redirectUri,
+//   discoveryDocs,
+//   onFailure,
+//   uxMode,
+//   scope,
+//   accessType,
+//   responseType,
+//   jsSrc,
+//   onRequest,
+//   prompt
+// })
+
+
   const failedGoogle = (response) =>{
     // console.log("failed");
     // console.log(response);
@@ -68,6 +91,7 @@ function App() {
           onSuccess={responseGoogle} 
           onFailure={failedGoogle} 
           cookiePolicy={'single_host_origin'} 
+          isSignedIn={true}
         
           />
             <br/>
