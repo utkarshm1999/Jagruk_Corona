@@ -1,0 +1,32 @@
+#what{
+    align-content:left;
+    padding-right:9%;
+    font-family:itc Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    margin-left: 9%;
+
+    }
+.back{
+    border: none;
+    margin-top: 41px;
+}
+.what-1{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    color: #FD5E53;
+    margin-top: 47px;
+    margin-bottom: 20px;
+}
+.what-2{
+    font-size: 13.5px;
+    line-height: 22px;
+    color: #424551;
+    margin-bottom: 47px;
+}
+.what-3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #424551;
+    margin-bottom: 15px;
+}

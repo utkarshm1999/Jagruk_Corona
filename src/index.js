@@ -7,11 +7,17 @@ import Report from './report';
 import Form from './form';
 import Submit from './submit';
 import AddToHomescreen_ from './addtohs';
-
-
-
+import Intro from './intro';
+import Mainpage from './mainpage';
+import ReportForm from './reportform';
+import ReportFormFinal from './reportformfinal';
+import UsefulLinks from './usefullinks';
+import Stats from './stats';
+import Share from './share';
+import WhatIs from './whatis';
 
 import * as serviceWorker from './serviceWorker';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -36,18 +42,41 @@ ReactDOM.render(
           <Route path="/home">
             <App />
           </Route>
-          <Route path="/report">
+          {/* <Route path="/report">
             <Report/>
-          </Route>
-          <Route path="/form">
+          </Route> */}
+          {/* <Route path="/form">
             <Form/>
-          </Route>
+          </Route> */}
           <Route path="/submit">
             <Submit/>
+          </Route>
+          <Route path="/intro">
+            <Intro />
+          </Route>
+          <Route path="/main">
+            <Mainpage />
+          </Route>
+          <Route path="/about">
+            <WhatIs />
+          </Route>
+          <Route path="/share">
+            <Share />
+          </Route>
+          <Route path="/formpage">
+            <ReportForm />
+          </Route>
+         
+          <Route path="/stats">
+            <Stats />
+          </Route>
+          <Route path="/usefullinks">
+            <UsefulLinks />
           </Route>
           <Route path="/">
             <App />
           </Route>
+         
         </Switch>
 
     </Router>

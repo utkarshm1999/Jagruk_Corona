@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
+import './submit.css';
 
 function Submit(){
 	const taketoform =()=>{
-		window.location.href="/form";
+		window.location.href="/formpage";
 	}
 
 	const taketoreport =()=>{
-		window.location.href="/report";
+		window.location.href="/main";
 	}
 	if(window.localStorage.login && window.localStorage.login=="true"){
 		return(

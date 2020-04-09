@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { GoogleLogout } from 'react-google-login';
 
+
+
 function logOut(e){
     e.preventDefault();
     console.log("click");
@@ -92,7 +94,8 @@ function Report(){
                 <button class="page2-1-2" type="button" onClick={taketoform}>Inform</button>
                 <p class="page2-1-3">We will keep your identity anonymous all the time.</p>
             </div>
-            
+            <a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">Share via Whatsapp</a>
+
               {/* <GoogleLogout
                 render={renderProps => (
                   <button
