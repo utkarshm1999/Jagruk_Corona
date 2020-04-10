@@ -1,8 +1,8 @@
 #share{
     align-content:left;
-    padding-right:9%;
+    
     font-family:itc Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    margin-left: 9%;
+    
 
     }
 .back{
@@ -16,11 +16,13 @@
     color: #FD5E53;
     margin-top: 47px;
     margin-bottom: 12px;
+    margin-left: 9%;
 }
 .share2{
     font-size: 16px;
     line-height: 21px;
     color: #424551;
+    margin-left: 9%;
 }
 .share3{
     margin-left: auto;
@@ -31,8 +33,7 @@
 .share4{
     width: 138px;
     height: 40px;
-    margin-left: 100px;
-    margin-right: 50px;
+    
     border: none;
     background: #21BF73;
     color: white;
@@ -42,5 +43,7 @@
     line-height: 24px;
     color: #FFFFFF;
     display: block;
-
+}
+.edit-5{
+    text-align: center;
 }

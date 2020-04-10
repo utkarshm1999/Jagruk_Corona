@@ -25,17 +25,17 @@ function Intro(){
 			<p class="step-3">1</p>
 			<p class="step-4">Click a picture if you see <br/> anyone violating lockdown.</p>
 			</div>
-			<img class="step-5" src="icon/Group 35.png"  alt="noimage"/>
+			<img class="arrow-image" src="icon/Group 35.png"  alt="noimage"/>
 			<div class="step-34">
 			<p class="step-3">2</p>
 			<p class="step-4">Enter the address where the <br/>incident happened.</p>
 			</div>
-			<img class="step-5" src="icon/Group 35.png"  alt="noimage"/>
+			<img class="arrow-image" src="icon/Group 35.png"  alt="noimage"/>
 			<div class="step-34">
 			<p class="step-3">3</p>
 			<p class="step-4">Your contact details so our <br/> moderators can verify.</p>
 			</div>
-			<img class="step-5" src="icon/Group 35.png"  alt="noimage"/>
+			<img class="arrow-image" src="icon/Group 35.png"  alt="noimage"/>
 			<img class="step-6" src="icon/Group 42.png"  alt="noimage"/>
 			<p class="step-7">Our moderators will inform <br/> authorities to resolve issue.</p>
 			<button class="step-8" type="button" onClick={taketomain}>Next

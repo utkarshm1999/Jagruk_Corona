@@ -26,11 +26,11 @@ class ReportFormFinal extends React.Component{
 			</button>
 			<img src="icon/loading.gif" class="loader" id="loadergif" style={{display:this.props.load}}/>
 				{/* <nav class="navbar ">
-		  <div >
+		  <div class="dropdown">
 			  <button type="button" class="page3-2" data-toggle="collapse" data-target="#myNavbar">
 					<img class="step-5" src="icon/menu.png"  alt="noimage"/>            
 			  </button>
-		   </div>
+		   
 			<div class="page3-1 dropdown-menu dropdown-menu-right " id="myNavbar">
 			  <ul class=" abcd  ">
 			  	<li class="abcd"><a href="#"><img class="nav-icon" src="icon/login-16 (1).png"  alt="noimage"/> Login</a></li><br/>
@@ -41,13 +41,14 @@ class ReportFormFinal extends React.Component{
 				<li class="abcd"><a href="#"><img class="nav-icon" src="icon/Group 19.png"  alt="noimage"/> Logout</a></li><br/>
 			  </ul>
 			</div>
+		</div>
 			<div class="repo1-1">
 					<p class="repo1-1-1">Report violation </p>
 					<img class="repo1-1-2" src="icon/hvxnx.png"  alt="noimage"/>
 				</div>
 		 </nav> */}
-		<div class="repo1-2" onSubmit={this.props.sub}>
-			 <div > <img class="repo1-2-1" src="icon/Group 54.png"  alt="noimage"/><img id="repo1-3-2" src="icon/Group.png"  alt="noimage"/></div>
+		<div class="repo1-2-add" onSubmit={this.props.sub}>
+			 <div > <img class="repo1-2-1 edit2" src="icon/Group 54.png"  alt="noimage"/><img id="repo1-3-2" src="icon/Group.png"  alt="noimage"/></div>
 		<form >
 			<label for="Cont" class="contact page3-2-2">Your Contact Number</label><br/>
 			<input type="number" class="cont page3-2-2-2" value={this.props.val.number} onChange={e=> this.props.cbfunc(e.target.value, 6)} name="Cont" required/><br/>
@@ -62,7 +63,7 @@ class ReportFormFinal extends React.Component{
 				 </div>
 			
 			
-			</div> 
+		</div> 
 		)
 	}
 }

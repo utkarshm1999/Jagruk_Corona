@@ -27,6 +27,21 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        // Show hide popover
+        $(".dropdown").click(function(){
+            $(this).find(".dropdown-menu").slideToggle("fast");
+        });
+    });
+    $(document).on("click", function(event){
+        var $trigger = $(".dropdown");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $(".dropdown-menu").slideUp("fast");
+        }
+    });
+</script>
     <title>Jagruk Corona</title>
 
     <style>
@@ -36,20 +51,20 @@
       box-sizing: border-box;
       background-color: #F9FCFB;
     }
-      
+
       </style>
   </head>
   <body>
-  
-        
+
+
         <div id="root"></div>
-        
-    
+
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    
-    
-    
-   
+
+
+
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

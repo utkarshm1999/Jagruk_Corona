@@ -43,9 +43,7 @@
 .page3-1{
 background: #21BF73;
 width:230px;
-margin: -37px 10% 0 !important;
-
-
+margin: 0px 10% 0 !important;
 }
 .abcd{
   background: #21BF73;  
@@ -141,6 +139,6 @@ display: inline-block;
 
     @media screen and (max-width:450px) {
         .page3-1{
-    margin: -37px 45px 0 !important;
+    margin: 0px 45px 0 !important;
         }
         }

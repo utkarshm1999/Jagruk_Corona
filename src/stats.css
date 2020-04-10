@@ -2,7 +2,7 @@
     align-content:left;
     padding-right:9%;
     font-family:itc Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    margin-left: 9%;
+  
 
     }
 .back{
@@ -16,6 +16,7 @@
     color: #FD5E53;
     margin-bottom: 32px;
     margin-top: 47px;
+    margin-left: 9%;
 }
 .page2-11{
     width: 95px;

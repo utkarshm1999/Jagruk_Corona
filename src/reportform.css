@@ -34,7 +34,7 @@
 .page3-1{
 background: #21BF73;
 width:230px;
-margin: -109px 9% 0 !important;
+margin: 0px 9% 0 !important;
 }
 
 .abcd{
@@ -91,7 +91,7 @@ display: inline-block;
     margin-bottom: 26px;
     display: none;
 }
-.repo1-2{
+.repo1-2-3{
     margin-left: 9%;
     border-bottom: 1px solid rgb(66,69,81,0.4);
     margin-right: 9%;
@@ -116,7 +116,7 @@ display: inline-block;
 
 .upload-pic{
     
-    margin-top: 44px;
+    margin-top: 24px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -155,7 +155,7 @@ display: none !important;
     margin-right: 10px;
 }
 #upload-img{
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 .repo1-3{
 
@@ -171,7 +171,7 @@ display: none !important;
 }
 @media screen and (max-width:450px) {
         .page3-1{
-    margin: -109px 45px 0 !important;
+    margin: 0px 45px 0 !important;
         }
     .page3-2-2{
         margin-right: 40%;
@@ -195,6 +195,12 @@ display: none !important;
     margin-right: 9%;
     
 }
+.edit-3{
+    margin-top:15px;
+}
+.edit-4{
+    margin-top: 30px;
+}
 .City{
         width: 45%;
         height: 36px;
@@ -210,7 +216,7 @@ display: none !important;
 }
 
 .submit{	
-        width: 134px;
+    width: 134px;
     height: 52px;
     float: right;
     border: none;

@@ -232,11 +232,11 @@ class MainPage_ extends React.Component{
 						<img src="favicon.ico" id="logo-main" alt="noimage"/>            
 				</button>
 					<nav class="navbar ">
-			  <div >
+			<div class="dropdown">
 				  <button type="button" class="page3-2" data-toggle="collapse" data-target="#myNavbar">
 						<img class="step-5" src="icon/menu.png"  alt="noimage"/>            
 				  </button>
-			   </div>
+			  
 				<div class="page3-1 dropdown-menu dropdown-menu-right " id="myNavbar">
 				  <ul class=" abcd  ">
 {/* 		
@@ -268,7 +268,7 @@ class MainPage_ extends React.Component{
 				  </ul>
 		
 				</div>
-				
+				</div>	
 			 </nav>
 				<div id="page2-1">
 					<div class="page2-11">

@@ -1,8 +1,8 @@
 #use{
     align-content:left;
-    padding-right:9%;
+    padding-right:16%;
     font-family:itc Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    margin-left: 9%;
+    
 
     }
 .back{
@@ -17,6 +17,7 @@
     color: #FD5E53;
     margin-top: 47px;
     margin-bottom: 12px;
+    margin-left: 9%;
 }
 .use-2{
     font-size: 16px;
@@ -24,6 +25,7 @@
     color: #424551;
     margin-bottom: 30px;
     margin-right: 9%;
+    margin-left: 9%;
 }
 .use-3{
 width: 100%;
@@ -32,8 +34,9 @@ width: 100%;
     border-radius: 2px;
     margin-bottom: 15px;
     text-align: center;
-    margin-right: 9%;
+   
     padding-top: 17px;
+    margin-left: 9%;
 }
 .use-3-1{
     font-weight: 600;

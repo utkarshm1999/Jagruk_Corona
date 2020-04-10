@@ -201,11 +201,11 @@ class Form1 extends React.Component{
 						<img class="back-1" src="icon/Vector.png"  alt="noimage"/>            
 				</button><br/><br/>
 					{/* <nav class="navbar ">
-			  <div >
+			  <div class="dropdown">
 				  <button type="button" class="page3-2" data-toggle="collapse" data-target="#myNavbar">
 						<img class="step-5" src="icon/menu.png"  alt="noimage"/>            
 				  </button>
-			   </div>
+			  
 				<div class="page3-1 dropdown-menu dropdown-menu-right " id="myNavbar">
 				  <ul class=" abcd  ">
 				  	<li class="abcd"><a href="#"><img class="nav-icon" src="icon/login-16 (1).png"  alt="noimage"/> Login</a></li><br/>
@@ -221,8 +221,9 @@ class Form1 extends React.Component{
 						<img id="repo1-1-2" src="icon/Group 50.png"  alt="noimage"/>
 						<img id="repo1-1-21" src="icon/1 filed.png"  alt="noimage"/>
 					</div>
+				 </div>
 			 </nav> */}
-			<div class="repo1-2">
+			<div class="repo1-2-3">
 				 <div class="ua1"> <img class="repo1-2-1" src="icon/Group 52.png"  alt="noimage"/><img id="repo1-2-2" src="icon/Group.png"  alt="noimage"/></div>
 				
 						<label for="file-input">
@@ -237,7 +238,7 @@ class Form1 extends React.Component{
 				</div>
 				 <div class="repo1-3 "><div class="ua2">  <img class="repo1-2-1" src="icon/Group 53.png"  alt="noimage"/><img id="repo1-3-2" src="icon/Group.png"  alt="noimage"/></div>
 				<form action="" onSubmit={this.addsubmit} onsubmit="return false;">
-					<label for="Add" class="page3-2-2">Address</label><br/>
+					<label for="Add" class="page3-2-2 edit-3">Address</label><br/>
 					<input type="text" class="add page3-2-2-2"  name="add" value={this.props.val.address} onChange={e=> this.props.cbfunc(e.target.value, 2)} placeholder="  Address where the violation happened" required/><br/>
 						
 						<label for="City" class="page3-2-2">City</label>
@@ -248,7 +249,7 @@ class Form1 extends React.Component{
 						<input type="text" class="State page3-2-2-2" name="State" required value={this.props.val.state} onChange={e=> this.props.cbfunc(e.target.value, 4)}/><br/>
 						<label for="Pin" class="page3-2-2-1">Pin</label><br/>
 						<input type="number" class="pin page3-2-2-2" name="Pin" required value={this.props.val.pin} onChange={e=> this.props.cbfunc(e.target.value, 5)}/><br/>
-					 	<input type="button" class="submit"  onClick={this.props.sub} value="Next     >"/>
+					 	<input type="button" class="submit edit-4"  onClick={this.props.sub} value="Next     >"/>
 				</form> 
 				</div>
 			
