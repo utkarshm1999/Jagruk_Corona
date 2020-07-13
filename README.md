@@ -6,8 +6,8 @@ CURRENT STATUS: STOPPED
 
 **UI Designs:**
 
-![Design-1](https://github.com/utkarshm1999/Jagruk_Corona/blob/master/design-1.png)
+![Design-1](/design-1.png)
 
-![Design-2](https://github.com/utkarshm1999/Jagruk_Corona/blob/master/design-2.png)
+![Design-2](/design-2.png)
 
-![Design-3](https://github.com/utkarshm1999/Jagruk_Corona/blob/master/design-3.png)
+![Design-3](/design-3.png)
